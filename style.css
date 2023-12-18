@@ -1,0 +1,247 @@
+:root{
+    --pink: #FF4949;
+    --icon-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* Begin Util */
+.bolder {
+    font-weight:500px;
+}
+/* End Utils */
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: black;
+    padding: 2rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    width: 200px;
+    height: 5%;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .navbar .detail{
+    position: relative;
+}
+
+header .navbar .dropdown-menu  {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    background-color: black; 
+    width: 100%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/images/home.jpg) no-repeat;
+    background-size:cover;
+    background-position:left;
+}
+
+.home .slogan{
+    width: 100vw;
+    text-align: center;
+}
+
+.home .slogan h3{
+    font-size: 6rem;
+    color: white;
+}
+
+.home .slogan span{
+    font-family: 'Courier new', courier, monospace;
+    font-size: 3.5rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* Begin Content */
+
+.content{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    gap: 5rem;
+}
+
+.content-info{
+    width: 40vw;
+    font-size:20px;
+    text-align: justify;
+    flex: 60%;
+}
+
+.content-info button{
+    margin-top: 20px;
+    font-size: small;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 20px; 
+}
+
+.content-img{
+    text-align: right;
+}
+
+.content-img img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* End Content */
+
+.commit-title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.commit-info{
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.main-idea{
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+}
+
+.idea-image{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.general-font{
+    font-size: 15px;
+    text-align: center;
+}
+
+.advert{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.advert-body{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    column-gap: 7rem;
+    justify-content: space-between;
+}
+
+.vid1{
+    width: 50%;
+    
+}
+
+.vid2{
+    width: 50%;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.news-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    justify-content: space-around;
+}
+
+.card-style{
+    width: 350px;
+    height: 450px;
+}
+
+.card-img-top{
+    height: 60%;
+    margin-bottom: 5px;
+}
+
+.author_date{
+    font-size: 10px;
+    color: #adadad;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 10px;
+}
+.footer{
+    display: flex;
+
+}
+.f1{
+    flex: 33%;
+    font-size: 15px;
+}
+.f1 img{
+    width: 60%;
+    height: 25%;
+    margin-bottom: 10px;
+}
+.f2, .f3{
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+    margin: 15px 15px;
+    row-gap: 2rem;
+}
+
+.f2-detail{
+    line-height: 1px;
+    word-spacing: 0;
+    letter-spacing: .5px;
+}
+
+.icon-contact a{
+    border-radius: 50px 50px 50px 50px;
+    font-size: var(--icon-size,35px);
+}
